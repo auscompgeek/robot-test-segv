@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+wpilib = "==2023.0.0b7"
+robotpy-wpiutil = "==2023.0.0b7.post1"
+robotpy-rev = "==2023.0.0b2"
+
+[dev-packages]
+robotpy-halsim-gui = "==2023.0.0b7"
+pyfrc = "==2023.0.0b4"
+pytest = ">=7.2"
+pytest-pretty = "*"
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+deploy = "python robot.py deploy"
+sim = "python robot.py sim"
+test = "python robot.py test"
